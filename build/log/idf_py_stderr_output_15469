@@ -1,7 +1,0 @@
-CMake Error at /home/ubuntu/esp32/esp-idf/tools/cmake/component.cmake:439 (message):
-  Called idf_component_register from a non-component directory.
-Call Stack (most recent call first):
-  external/arduino-esp32/CMakeLists.txt:307 (idf_component_register)
-
-
-ninja: error: rebuilding 'build.ninja': subcommand failed
