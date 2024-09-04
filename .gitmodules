@@ -1,0 +1,6 @@
+[submodule "external/fff"]
+	path = external/fff
+	url = https://github.com/PaulStoffregen/OneWire
+[submodule "external/arduino-esp32"]
+	path = external/arduino-esp32
+	url = https://github.com/espressif/arduino-esp32

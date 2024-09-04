@@ -1,0 +1,8 @@
+CMake Error at CMakeLists.txt:10 (add_subdirectory):
+  The source directory
+
+    /home/ubuntu/esp32/ds18b20_temp_sensor/external/OneWire
+
+  does not contain a CMakeLists.txt file.
+
+
