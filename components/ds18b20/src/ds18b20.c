@@ -53,3 +53,22 @@ bool one_wire_read_bit(void){
 
     return bit;
 }
+
+void one_wire_write_byte(uint8_t data){
+    for(int i=0; i<8; i++){
+        one_wire_write_bit(data & 0x01);
+        data >>= 1;
+    }
+}
+
+uint8_t one_wire_read_byte(void){
+    uint8_t data = 0;
+
+    for (int i=0; i<8; i++){
+        data >>= 1;
+        if(one_wire_read_bit()){
+            data |= 0x80;
+        }
+    }
+    return data;
+}
